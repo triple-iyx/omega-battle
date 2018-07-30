@@ -6,7 +6,7 @@ import json
 import random
 import os
 import math
-import request
+import requests
 
 Client = discord.Client()
 client = commands.Bot(command_prefix='>')
