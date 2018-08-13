@@ -88,7 +88,7 @@ async def wyvern(users, user):
 			with open('user.json', 'w') as f:
 				json.dump(users, f)
 		if enemyhp <= 0:
-			users[user.id]'hp'] += givehp
+			users[user.id]['hp'] += givehp
 			embed2 = discord.Embed(description='You earned **+{} xp**!\nType `>stats` to see how much xp you have.'.format(earnxp), color=16768768)
 			embed2.set_author(name='{} has won the battle!'.format(user.name))
 			embed2.set_thumbnail(url=user.avatar_url)
