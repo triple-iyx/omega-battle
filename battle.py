@@ -66,7 +66,7 @@ async def wyvern(users, user):
 		maxEnemyhp = randomhp
 		hp = users[user.id]['hp']
 		restarthp = users[user.id]['restart_hp']
-		xp = random.randint(1, 3)
+		xp = random.randint(2, 3)
 		calc = 100/xp
 		percent = int(calc)
 		earnxp = random.randint(200, 550)
