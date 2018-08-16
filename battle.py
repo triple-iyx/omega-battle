@@ -43,7 +43,7 @@ async def update_data(users, user):
 		users[user.id]['equipped_weapon'] = {}
 		users[user.id]['equipped_weapon']['name'] = wooden_spear
 		users[user.id]['equipped_weapon']['dmg'] = ws_dmg
-		users[user.id]['xp'] = 0
+		users[user.id]['xp'] = 200
 		users[user.id]['level'] = 0
 		
 #battle command
