@@ -288,7 +288,7 @@ async def stats(ctx):
 		weapon_e = users[ctx.message.author.id]['equipped_weapon']['name']
 		weapon_d = users[ctx.message.author.id]['equipped_weapon']['dmg']
 		xp = users[ctx.message.author.id]['xp']
-		level = users[user.id]['level']
+		level = users[ctx.message.author.id]['level']
 		lvl_end = int(xp ** (1/4))
 	embed = discord.Embed(description='**HP**: {}/{}\n**Gold**: {}\n**Level**: {}\n**XP**: {}/{}\n**Weapon Equipped**: {}\n	**Weapon Damage**: {}'.format(hp, maxHP, gold, level, xp, lvl_end, weapon_e, weapon_d), color=discord.Colour.purple())
 	embed.set_author(name=ctx.message.author.name, icon_url=ctx.message.author.avatar_url)
