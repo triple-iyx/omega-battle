@@ -100,7 +100,7 @@ async def wyvern(users, user):
 			if users[user.id]['xp'] > users[user.id]['xp_end']:
 				users[user.id]['level'] += 1
 				users[user.id]['xp_end'] *= 4
-				await client.say('**{}** has leveled up to level **{}**!'.format(lvl_start))
+				await client.say('**{}** has leveled up to level **{}**!'.format(user.mention, lvl_start))
 				users[user.id]['restart_hp'] += 50
 				users[user.id]['hp'] = users[user.id]['restart_hp']
 				users[user.id]['xp'] = users[user.id]['xp'] - users[user.id]['xp_end']
@@ -165,7 +165,7 @@ async def werewolf(users, user):
 			if users[user.id]['xp'] > users[user.id]['xp_end']:
 				users[user.id]['level'] += 1
 				users[user.id]['xp_end'] *= 4
-				await client.say('**{}** has leveled up to level **{}**!'.format(lvl_start))
+				await client.say('**{}** has leveled up to level **{}**!'.format(user.mention, lvl_start))
 				users[user.id]['restart_hp'] += 50
 				users[user.id]['hp'] = users[user.id]['restart_hp']
 				users[user.id]['xp'] = users[user.id]['xp'] - users[user.id]['xp_end']
