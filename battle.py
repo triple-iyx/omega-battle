@@ -97,7 +97,7 @@ async def wyvern(users, user):
 			embed2.set_thumbnail(url=user.avatar_url)
 			users[user.id]['xp'] += earnxp
 			await client.say(embed=embed2)
-			if users[user.id]['xp'] >= users[user.id]['xp_end']:
+			if users[user.id]['xp'] > users[user.id]['xp_end']:
 				users[user.id]['level'] += 1
 				users[user.id]['xp_end'] *= 4
 				await client.say('**{}** has leveled up to level **{}**!'.format(users[user.id]['level']))
@@ -162,7 +162,7 @@ async def werewolf(users, user):
 			embed2.set_thumbnail(url=user.avatar_url)
 			users[user.id]['xp'] += earnxp
 			await client.say(embed=embed2)
-			if users[user.id]['xp'] >= users[user.id]['xp_end']:
+			if users[user.id]['xp'] > users[user.id]['xp_end']:
 				users[user.id]['level'] += 1
 				users[user.id]['xp_end'] *= 4
 				await client.say('**{}** has leveled up to level **{}**!'.format(users[user.id]['level']))
