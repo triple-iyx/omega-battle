@@ -161,7 +161,7 @@ async def werewolf(users, user):
 			embed2.set_thumbnail(url=user.avatar_url)
 			users[user.id]['xp'] += earnxp
 			await client.say(embed=embed2)
-			if exp >= lvl_end:
+			if exp >= xp_end:
 				users[user.id]['level'] += 1
 				await client.say('**{}** has leveled up to level **{}**!'.format(users[user.id]['level']))
 				users[user.id]['restart_hp'] += 50
