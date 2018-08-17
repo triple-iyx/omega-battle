@@ -1,1 +1,1 @@
-worker: python omega.py
+worker: python battle.py
